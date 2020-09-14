@@ -4,4 +4,3 @@ mblog
 *.pyc
 .idea
 logs
-migrations

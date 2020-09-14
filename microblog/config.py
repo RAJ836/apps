@@ -12,6 +12,7 @@ class Config:
     MAIL_USE_TLS = os.environ.get('MAIL_USE_TLS') is not None
     MAIL_USERNAME = os.environ.get('MAIL_USERNAME')
     MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD')
-    ADMINS = ['abc@gmail.com']
+    ADMINS = ['raj.mech836@gmail.com']
     ELASTICSEARCH_URL = os.environ.get('ELASTICSEARCH_URL')
     POSTS_PER_PAGE =25
+    LOG_TO_STDOUT = os.environ.get('LOG_TO_STDOUT')
