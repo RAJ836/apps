@@ -1,0 +1,17 @@
+
+
+    {% for post in posts %}
+    <table class="table table-hover">
+        <tr valign="top">
+            {%if post.author.avatar%}
+            <td width="70px"><img src="{{post.author.avatar(22)}}"></td>
+            <td><a href="{{url_for('user',username=post.author.username)}}">{{post.author.username}}</a> posted : <b>{{post.body}} </b><br>posted on :{{moment(post.timestamp).fromNow()}}</td>
+       {%else %}
+    <td>{{post.author.username}} posted : <b>{{post.body}} </b></td>
+    {%endif%}
+
+        </tr>
+    </table>
+    {% endfor %}
+
+

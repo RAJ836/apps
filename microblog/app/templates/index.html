@@ -1,0 +1,15 @@
+{% extends 'base.html'%}
+{% import 'bootstrap/wtf.html' as wtf %}
+{% block app_content %}
+    <h1>Hi {{current_user.username}}</h1>
+       {% if form %}
+            {{wtf.quick_form(form)}}
+        {% endif %}
+        <div><p>{% include "_post.html" %}</p></div>
+    {% if prev_url %}
+        <a href="{{prev_url}}">Newer Posts</a>
+    {%  endif %}
+    {% if next_url %}
+        <a href="{{next_url}}">Older Posts</a>
+    {%  endif %}
+{% endblock app_content%}

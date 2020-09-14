@@ -1,0 +1,7 @@
+.DS_Store
+__pycache__/
+mblog
+*.pyc
+.idea
+logs
+migrations
