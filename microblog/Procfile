@@ -1,1 +1,1 @@
-web: flask db upgrade; gunicorn microblog:app;uwsgi uwsgi.ini
+web:flask db upgrade; gunicorn microblog:app
